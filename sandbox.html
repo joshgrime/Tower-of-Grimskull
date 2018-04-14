@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JS RogueLike</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="rogue.js"></script>
+    <script type="text/javascript" src="world.js"></script>
+    <script type="text/javascript" src="player.js"></script>
+    <script type="text/javascript" src="monsterFight.js"></script>
+    <script type="text/javascript" src="level1.js"></script>
+    <script type="text/javascript" src="level2.js"></script>
+    
+</head>
+    
+<body>
+    <span id="level_select">
+    Select Level: <input id="level" type="text" value="1">
+    <button onclick="god(); levelPick(); frankenstein(); bag();">Build World</button>
+    </span>
+    <p />
+<div class="character">
+Health: <div id="hp">0</div><p />
+Level: <div id="lvl">1</div><p />
+Atk: <div id="atk">0</div><p />
+Def: <div id="def">0</div><p />
+Exp: <div id="exp">0</div><p />
+Armour: <p /><div id="armourContainer"></div><p />
+Weapon: <p /><div id="weaponContainer"></div><p />
+</div>  
+<div id="universe"></div>
+<p />   
+<div id="questLog"></div>
+<div id="bag"></div>
+<div id="equipHold"></div>
+
+
+</body>
+</html>

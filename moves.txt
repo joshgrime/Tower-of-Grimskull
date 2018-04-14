@@ -1,0 +1,18 @@
+   if (k == 40 && ypos < 16) {
+        chrId.style.top = (chr.updown()) + 50 + "px";
+        ypos+=1;
+    }
+    else if (k == 38) {
+        chrId.style.top = (chr.updown()) - 50 + "px";
+        ypos-=1;
+        }
+    
+    else if (k == 37 && xpos > 1) {
+        chrId.style.left = (chr.leftright()) - 49 + "px";
+        xpos-=1;
+    }
+    else if (k== 39 && xpos < 16) {
+        chrId.style.left = (chr.leftright()) + 49 + "px";
+        xpos+=1;
+    }
+}

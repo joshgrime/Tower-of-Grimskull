@@ -1,0 +1,5 @@
+var skeleton = {
+    "attack":"5",
+    "dmgRand":"(Math.floor(Math.random() * 10) + 1);",
+    "monsterHp":"10"
+};

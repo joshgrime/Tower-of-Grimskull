@@ -1,0 +1,124 @@
+body {font-family: Calibri; background-color: #17191c; color:aliceblue; font-family: 'Palatino';}
+#logo {position: absolute; top: 20px; left: 242px;}
+
+/*game world*/
+#universe {width: 600px; height: 600px; position: absolute; top:42px; left:240px; padding: 0px;}
+.map {width: 600px; height: 600px; max-width: 600px; max-height: 600px; margin 0px; padding: 0px; border-collapse: separate; border-width: 0px;}
+.row {width: 600px; height: 60px; max-width: 500px; max-height: 50px; margin: 0px; padding: 0px; border-collapse: inherit;}
+.cell {height: 60px; width: 60px; max-width: 50px; max-height: 50px; border-style: solid; border-width: 1px; padding: 0px; margin: 0px; position: relative;}
+.visible {visibility: visible; opacity: 1; transition: opacity 1s linear;}
+.hidden {visibility: hidden; opacity: 0; transition: visibility 0s 2s, opacity 1s linear;}
+.hiddenalways {visibility: hidden;}
+#zonepop {background-color: #121222; width: 584px; height: 20px; border: 1px solid aliceblue; border-radius: 3px; overflow-y: scroll; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; z-index:1; position: absolute; top: 44px; left: 242px; font-family: 'Palatino'; font-size: 12px; color: aliceblue; text-align: center;}
+
+ /*terrain*/
+
+
+/*character info pane*/
+.character {width: 187px; height: 436px; position: absolute; left: 20px; top: 44px; font-family: inherit; padding: 10px; text-align: center; background-color:#2d323a; background-image: url(character.png);}
+#armourContainer {width: 50px; height: 50px; border-style: solid; border-width: 1px; border-color: dimgray; position: relative; top: 189px; left: 26px;}
+#weaponContainer {width: 50px; height: 50px; border-style: solid; border-width: 1px; border-color: dimgray; position: relative; top: 122px; left: 111px;}
+#equipHold {width: 200px; height: 100px; border-style: collapse;position: absolute; top:275px; left:285px;}
+#equipPanel {width: 200px; height: 100px; border-style: solid; border-width: 1px; border-color: aliceblue; background-color:#2d323a; padding-top: 20px; padding-left: 20px; padding-right: 20px;}
+#equipButton {width: 80px; height: 20px; border: #999999; background-color: azure; margin-left: auto; margin-right: auto; text-align: center; color: #2d323a; font-family: 'Georgia';}
+#equipButton:hover {width: 80px; height: 20px; border: #999999; background-color: azure; margin-left: auto; margin-right: auto; text-align: center;}
+#hp {position: relative; top: 69px; left: 54px;}
+#lvl {position: relative; top: 69px; left: 52px;}
+#atk {position: relative; top: 69px; left: 52px;}
+#def {position: relative; top: 69px; left: 52px;}
+#exp {position: relative; top: 69px; left: 41px; font-size: 14px;}
+
+/*inventory*/
+#bag {width: 102px; height: 510px; padding: 0px; border-style: solid; border-width: 1px; border-color: aliceblue; position: absolute; top:43px; left:850px; background-color:#2d323a;}
+.bagcell {width: 50px; height: 50px; border-style: collapse; border-color: aliceblue; border-width: 1px; padding: 0px; margin: 0px;}
+
+/*combat log*/
+.dmgText {font-weight: 700; color:coral;}
+.hpText {font-weight: 700; color: limegreen;}
+.critText {font-weight: 700; color:darkorchid;}
+.deadText {font-weight: 700; color:crimson;}
+.keyText {color: darkgoldenrod;}
+.equipText {color: darkseagreen;}
+.waterKeyText {color:cornflowerblue;}
+.lavaKeyText {color:brown;}
+
+/*quest log*/
+#questLog {width: 581px; height: 80px; overflow: auto; border: aliceblue; border-style: solid; border-width: 1px; position: absolute; top:700px; left:160px; padding-top: 10px; padding-left: 20px; background-color: #2d323a;}
+
+/*enemy hp bars*/
+.hpbar {width: 35px; height: 3px; background-color: white; border-style: solid; border-width: 1px; border-color: black; margin-left: auto; margin-right: auto;}
+.enemyCurrentHp {height: 3px; background-color: brown;}
+
+/*player*/
+#player {width: 32px; height: 32px; background-image: url(player.png); position: absolute; top: 14px; left: 15px;}
+
+#sword_up {width: 20px; height: 37px; background-image: url(sword_up.png); position: absolute; top: 3px; left: 31px;}
+#sword_down {width: 20px; height: 37px; background-image: url(sword_down.png); position: absolute; top: 25px; left: 20px;}
+#sword_left {width: 37px; height: 20px; background-image: url(sword_left.png); position: absolute; top: 25px; left: -8px;}
+#sword_right {width: 37px; height: 20px; background-image: url(sword_right.png); position: absolute; top: 26px; left: 25px;}
+.nudge {top:10px;}
+
+/*enemies*/
+.Skeleton {width: 32px; height: 32px; background-image: url(skeleton.png); position: relative; margin-left: auto; margin-right: auto;}
+.FingerMan {width: 30px; height: 30px; background-image: url(fingerman.png); position: relative; margin-left: auto; margin-right: auto;}
+.Necromancer {width: 32px; height: 32px; background-image: url(necromancer.png); position: relative; margin-left: auto; margin-right: auto;}
+.Nightmare {width: 32px; height: 32px; background-image: url(nightmare.png); position: relative; margin-left: auto; margin-right: auto;}
+.Ghoul {width: 32px; height: 32px; background-image: url(ghoul.png); position: relative; margin-left: auto; margin-right: auto;}
+.FeralGhoul {width: 32px; height: 32px; background-image: url(angryghoul.png); position: relative; margin-left: auto; margin-right: auto;}
+.LordShadowball {width: 32px; height: 32px; background-image: url(shadowball.png); position: relative; margin-left: auto; margin-right: auto;}
+.Guard {width: 32px; height: 32px; background-image: url(guard.png); position: relative; margin-left: auto; margin-right: auto;}
+.GrimskullElite {width: 32px; height: 32px; background-image: url(GrimskullElite.png); position: relative; margin-left: auto; margin-right: auto;}
+.Genie {width: 32px; height: 32px; background-image: url(Genie.png); position: relative; margin-left: auto; margin-right: auto;}
+
+/*NPCs*/
+#marty {width: 32px; height: 32px; background-image: url(marty.png); margin-left: auto; margin-right: auto;}
+#wizard1, #wizard2, #wizard3, #wizard4  {width: 32px; height: 32px; background-image: url(wizard.png); margin-left: auto; margin-right: auto;}
+
+/*speech bubble*/
+
+#bubble {background: linear-gradient(19deg, #ffffff, #ededed); width: 200px; height: 80px; border: 1px solid black; border-radius: 5px 5px 5px 5px; overflow-y: scroll; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; z-index:1; position: relative; font-family: 'Palatino';}
+#bubble::-webkit-scrollbar {width: 2px; background-color: none;}
+#bubble::-webkit-scrollbar-track {border-radius: 5px; background-color: none;}
+#bubble::-webkit-scrollbar-thumb {background-color: black;}
+.bubbletext {font-size: 12px; font-weight: 600; color: #00a518;}
+.narratortext {font-size: 12px; font-weight: 600; color: #152496;}
+
+/*hp pickups*/
+#Apple {width: 20px; height: 20px; background-image: url(apple.png); position: relative; margin-left: auto; margin-right: auto;}
+#Banana {width: 20px; height: 20px; background-image: url(banana.png); position: relative; margin-left: auto; margin-right: auto;}
+
+/*keys*/
+#SmallKey {width: 30px; height: 30px; background-image: url(key.png); position: relative; margin-left: auto; margin-right: auto;}
+#KeepKey {width: 32px; height: 32px; background-image: url(keepkey.png); position: relative; margin-left: auto; margin-right: auto;}
+#NightmareKey {width: 32px; height: 32px; background-image: url(nightmarekey.png); position: relative; margin-left: auto; margin-right: auto;}
+#WaterKey {width: 32px; height: 32px; background-image: url(switch.png); position: relative; margin-left: auto; margin-right: auto;}
+#LavaKey {width: 32px; height: 32px; background-image: url(lavakey.png); position: relative; margin-left: auto; margin-right: auto;}
+
+/*armour*/
+#PlateArmour {width: 32px; height: 32px; background-image: url(steelarmour.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#LeatherArmour {width: 32px; height: 32px; background-image: url(leatherarmour.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#StuddedLeatherArmour {width: 32px; height: 32px; background-image: url(studdedleather.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#ShadowArmour {width: 32px; height: 32px; background-image: url(shadowarmour.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#CrusaderArmour {width: 32px; height: 32px; background-image: url(crusaderarmour.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#RustyArmour {width: 32px; height: 32px; background-image: url(rustysteelarmour.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#RegalArmour {width: 32px; height: 32px; background-image: url(regalarmour.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#HolyArmour {width: 32px; height: 32px; background-image: url(holyarmour.png); margin-left: auto; margin-right: auto; padding: 0px;}
+
+/*weapons*/
+#OldSword {width: 32px; height: 32px; background-image: url(WoodSword.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#LongRedStickOfCleaving {width: 32px; height: 32px; background-image: url(LongRedStickOfCleaving.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#Dagger {width: 32px; height: 32px; background-image: url(dagger.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#RegalSword {width: 32px; height: 32px; background-image: url(regalsword.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#UnholyBlade {width: 32px; height: 32px; background-image: url(unholyblade.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#FrozenShard {width: 32px; height: 32px; background-image: url(frozenshard.png); margin-left: auto; margin-right: auto; padding: 0px;}
+#HellRazer {width: 32px; height: 32px; background-image: url(hellrazor.png); margin-left: auto; margin-right: auto; padding: 0px;}
+
+.chest {background-image: url(chest.png); background-repeat:no-repeat;}
+
+/*doors*/
+.topdoor {border-top-color: darkslateblue; border-top-width: 3px;}
+.bottomdoor {border-bottom-color: darkslateblue; border-bottom-width: 3px;}
+.leftdoor {border-left-color: darkslateblue; border-left-width: 3px;}
+.rightdoor {border-right-color: darkslateblue; border-right-width: 3px;}
+.keepdoor {border-left-color:coral; border-left-width: 3px;}
+.nightmaredoor {border-bottom-color:coral; border-bottom-width: 3px;}
